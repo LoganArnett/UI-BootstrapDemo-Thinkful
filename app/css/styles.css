@@ -7,3 +7,10 @@
   #carousel img {
     height: 100vh;
     width: 100%; }
+
+ul.nav-tabs li {
+  width: 33%;
+  text-align: center; }
+
+.tab-pane {
+  height: 80vh; }
