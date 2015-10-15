@@ -20,9 +20,31 @@
   </section>
   <section id="ourTabs">
     <uib-tabset>
-    <uib-tab heading="Static title">Static content</uib-tab>
-    <uib-tab heading="Another title">Another content</uib-tab>
-    <uib-tab heading="And Another title">And Another content</uib-tab>
+    <uib-tab heading="Digital Cameras">
+      <div class="camera col-xs-4" ng-repeat="camera in digitalCameras">
+       <img src="{{camera.photo}}" alt="{{camera.brand}}" />
+       <p class="brand">Brand: {{camera.brand}}</p>
+       <p class="price">Price: {{camera.price | currency }}</p>
+       <button type="button" class="btn btn-primary btn-lg" ng-click="isCollapsed = !isCollapsed">View Review</button>
+        <div collapse="isCollapsed">
+          <div class="well well-lg">{{camera.review}}<br> <span><rating ng-model="camera.rate" max="5" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" ></rating></span></div>
+        </div>
+     </div>
+    </uib-tab>
+    <uib-tab heading="Another title">
+      <div class="camera col-xs-4" ng-repeat="camera in filmCameras">
+       <img src="{{camera.photo}}" alt="{{camera.brand}}" />
+       <p class="brand">Brand: {{camera.brand}}</p>
+       <p class="price">Price: {{camera.price | currency }}</p>
+     </div>
+    </uib-tab>
+    <uib-tab heading="And Another title">
+      <div class="camera col-xs-4" ng-repeat="accessory in accessories">
+       <img src="{{accessory.photo}}" alt="{{accessory.brand}}" />
+       <p class="brand">Brand: {{accessory.brand}}</p>
+       <p class="price">Price: {{accessory.price | currency }}</p>
+     </div>
+    </uib-tab>
   </uib-tabset>
   </section>
 

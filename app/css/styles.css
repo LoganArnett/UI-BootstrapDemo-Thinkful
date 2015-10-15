@@ -13,4 +13,18 @@ ul.nav-tabs li {
   text-align: center; }
 
 .tab-pane {
-  height: 80vh; }
+  height: 80vh;
+  padding-top: 5%; }
+  .tab-pane .camera img {
+    width: 50%;
+    height: 20ex;
+    display: block;
+    margin: 0 auto; }
+  .tab-pane .brand, .tab-pane .price {
+    text-align: center;
+    font-weight: bold; }
+  .tab-pane .btn {
+    width: 100%; }
+
+#main {
+  padding-bottom: 50%; }

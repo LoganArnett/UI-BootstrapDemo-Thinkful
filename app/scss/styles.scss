@@ -20,4 +20,24 @@ ul.nav-tabs {
 
 .tab-pane {
   height: 80vh;
+  padding-top: 5%;
+  .camera {
+    img {
+      width: 50%;
+      height: 20ex;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .brand, .price {
+    text-align: center;
+    font-weight: bold;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+#main {
+  padding-bottom: 50%;
 }
