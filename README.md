@@ -11,9 +11,10 @@ to go if you plan to code along with me.
     * Can be installed globally with: `npm install -g bower`
 
 #### Step 1
-  * Clone this repo locally
+  * Fork and Clone this repo locally
+    * Fork this repo, click this button ![Fork Button](http://cl.ly/image/3x261B1q1N3w/Image%202015-10-15%20at%209.30.45%20AM.png) at the top right of the page
     * `cd` into the directory where you want to put this project
-    * Then run `git clone https://github.com/LoganArnett/UI-BootstrapDemo-Thinkful.git` in your terminal
+    * Then run `git clone https://github.com/`YOUR_GITHUB_USERNAME`/UI-BootstrapDemo-Thinkful.git` in your terminal
 
 #### Step 2
   * Look Around
