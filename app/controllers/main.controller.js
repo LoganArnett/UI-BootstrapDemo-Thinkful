@@ -3,6 +3,8 @@
 angular.module('MyBootstrApp') // declare which module this controller should attach to
 
 .controller('MainCtrl', function($scope){ // create our Main Controller
+  // Interval if we want the slides to cycle automatically
+  $scope.slideInterval = 4000;
   // Collection of slides for client photos Carousel
   $scope.slides = [
     {
